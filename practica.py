@@ -1,4 +1,6 @@
-a = int(input("P"))
-b = int(input("P"))
-c = a * b
-print(f'площадь{c}')
+def  func():
+    a = int(input('a'))
+    b = int(input('b'))
+    c = a  * b
+    print(c)
+func()
