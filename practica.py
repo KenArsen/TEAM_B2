@@ -1,6 +1,5 @@
-def  func():
-    a = int(input('a'))
-    b = int(input('b'))
-    c = a  * b
-    print(c)
-func()
+def func(a, b):
+   return a * b
+a, b = map(int, input("введите цифры: ").split())
+number = func(a, b)
+print(number)
