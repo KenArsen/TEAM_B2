@@ -1,3 +1,6 @@
+def total(length, width ):
+    return length * width
 length, width = map(int, input().split())
-total = length * width
-print(total)
+
+t = total (length, width )
+print(t)
