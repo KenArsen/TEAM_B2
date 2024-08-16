@@ -1,0 +1,35 @@
+"""Класс түзүү:
+Person деген класс тузунуздор,
+бул класста name жана age атрибуттары болуш керек.
+Ошондой эле, бул класста introduce деген метод болсун,
+ал "Hello, my name is {name} and I am {age} years old" деген созду чыргарсын.
+Student деген классты тузунуздор,
+ал Person классынан мурас алат жана кошумча student_id атрибутун кошунуздар.
+Ошондой эле, study деген метод кошулсун,
+ал "Student {name} is studying" деген созду чыграсын.
+"""
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old")
+
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+
+    def study(self):
+        print(f"Student {self.name} is studying")
+
+
+perr = Person("Alinur", 16)
+perr.introduce()
+
+dent = Student("Bilal", 15, "S1759")
+dent.introduce()
+dent.study()
+
+
