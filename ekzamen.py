@@ -28,7 +28,7 @@ class Student(Person):
 perr = Person("Alinur", 16)
 perr.introduce()
 
-dent = Student("Bilal", 15, "S1759")
+dent = Student("Bilal", 15, "A2008")
 dent.introduce()
 dent.study()
 
