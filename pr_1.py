@@ -9,4 +9,5 @@ class Animal:
 
 pr = Animal('cat',4)
 
+
 pr.info()
