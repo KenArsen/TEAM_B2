@@ -2,16 +2,16 @@ class Person:
     def __init__(self,name,age):
         self.name = name
         self.age = age
-    def info(self):
-        print(f'Name: {self.name}')
-        print(f'age: {self.age}')
-p = Person('baiel',14)
-p.info()
+    def introduce(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old")
+person = Person('baiel',14)
+person.introduce()
 
 class Student(Person):
-    def __init__(self,name,age,id):
+    def __init__(self,name,age,student_id):
         super().__init__(name,age)
-        self.id = id
-    def info(self):
-        print(f'Id {self.id}')
-rp = Student('baiel',14,'2010')
+        self.student_id = student_id
+    def studi(self):
+        print(f'Student {self.name} is studying')
+rp = Student('Arsen',22,'2010')
+rp.studi()
